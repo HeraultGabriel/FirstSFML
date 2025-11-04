@@ -20,9 +20,7 @@ public:
     {
         coin = sf::RectangleShape({ 64, 64 });
         coin.setPosition(_position);
-        coin.setOutlineThickness(2);
-        coin.setOutlineColor(sf::Color::Red);
-        texture = GameDataLoader::allTextures[5];
+        texture = GameDataLoader::allTextures[1];
         coin.setTexture(&texture);
         coin.setTextureRect(sf::IntRect({ 253, 225 }, { 16, 16 }));
     }

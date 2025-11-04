@@ -42,7 +42,7 @@ void Game::OnStart()
 	{
 		delete player;
 	}
-	player = new Player(GameDataLoader::allTextures[5]);
+	player = new Player(GameDataLoader::allTextures[1]);
 	player->SetPlayerPosition( sf::Vector2f(350, 950));
 
 	currentContent->CreateMap(*currentWindow);

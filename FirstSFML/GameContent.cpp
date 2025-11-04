@@ -21,22 +21,22 @@ void GameContent::RemoveGPElement(int _toRemove)
 void GameContent::CreateMap(sf::RenderWindow& _window)
 {
 	//BACKGROUND
-	AddMapElement(new MapElement(GameDataLoader::allTextures[5], sf::Vector2f(_window.getSize().x, _window.getSize().y), sf::Vector2f(0, 0), sf::Vector2i(604, 287), sf::Vector2i(10, 10)));
+	AddMapElement(new MapElement(GameDataLoader::allTextures[1], sf::Vector2f(_window.getSize().x, _window.getSize().y), sf::Vector2f(0, 0), sf::Vector2i(604, 287), sf::Vector2i(10, 10)));
 	AddMapElement(new MapElement(sf::Vector2f(200,50), sf::Vector2f(_window.getSize().x * 0.85, _window.getSize().y * 0.02)));
 
-	//AddMapElement(new MapElement("Graphics\\Egypt\\Bg\\Sky_Bg", sf::Vector2f(_window.getSize().x, _window.getSize().y), sf::Vector2f(0, 0), sf::Vector2i(604, 287), sf::Vector2i(10, 10)));
+	//AddMapElement(new MapElement("Graphics\\Egypt\\Bg\\Sky_Bg.png", sf::Vector2f(_window.getSize().x, _window.getSize().y), sf::Vector2f(0, 0), sf::Vector2i(604, 287), sf::Vector2i(10, 10)));
 
 	//WALL
 	for(int _i = 0; _i < 30; _i++)
 	{
-		AddMapElement(new MapElement(GameDataLoader::allTextures[5], sf::Vector2f(64, 64), sf::Vector2f(0, 64 * _i), sf::Vector2i(270, 429), sf::Vector2i(16, 16)));
-		AddMapElement(new MapElement(GameDataLoader::allTextures[5], sf::Vector2f(64, 64), sf::Vector2f(_window.getSize().x - 64, 64 * _i), sf::Vector2i(270, 429), sf::Vector2i(16, 16)));
+		AddMapElement(new MapElement(GameDataLoader::allTextures[1], sf::Vector2f(64, 64), sf::Vector2f(0, 64 * _i), sf::Vector2i(270, 429), sf::Vector2i(16, 16)));
+		AddMapElement(new MapElement(GameDataLoader::allTextures[1], sf::Vector2f(64, 64), sf::Vector2f(_window.getSize().x - 64, 64 * _i), sf::Vector2i(270, 429), sf::Vector2i(16, 16)));
 	}
 
 	//GROUND
 	for (int _i = 0; _i < 30; _i++)
 	{
-		AddMapElement(new MapElement(GameDataLoader::allTextures[5], sf::Vector2f(64, 64), sf::Vector2f(64 * _i, _window.getSize().y -64), sf::Vector2i(270, 378), sf::Vector2i(16, 16)));
+		AddMapElement(new MapElement(GameDataLoader::allTextures[1], sf::Vector2f(64, 64), sf::Vector2f(64 * _i, _window.getSize().y -64), sf::Vector2i(270, 378), sf::Vector2i(16, 16)));
 	}
 	
 	//COIN

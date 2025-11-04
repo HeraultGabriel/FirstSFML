@@ -24,8 +24,6 @@ public:
     {
         playerShape = sf::RectangleShape({ 80,128 });
         playerShape.setOrigin(sf::Vector2f(playerShape.getGeometricCenter().x, 128));
-        playerShape.setOutlineThickness(2);
-        playerShape.setOutlineColor(sf::Color::Green);
         playerTexture = _texture;
         playerShape.setTexture(&playerTexture);
         playerShape.setTextureRect(sf::IntRect({ 148, 87 }, { 20, 32 }));

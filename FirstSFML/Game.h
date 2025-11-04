@@ -16,11 +16,7 @@ class Game
 {
 	GameDataLoader* loader = new GameDataLoader("Graphics",
 		{
-			"luigi.png",
-			"wall.png",
-			"ground.png",
-			"coin.png",
-			"movementsheet.png",
+			"HolySheet.png",
 			"HolySheet.png"
 		},
 		"Font", 
