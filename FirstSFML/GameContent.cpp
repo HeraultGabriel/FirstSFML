@@ -24,6 +24,8 @@ void GameContent::CreateMap(sf::RenderWindow& _window)
 	AddMapElement(new MapElement(GameDataLoader::allTextures[5], sf::Vector2f(_window.getSize().x, _window.getSize().y), sf::Vector2f(0, 0), sf::Vector2i(604, 287), sf::Vector2i(10, 10)));
 	AddMapElement(new MapElement(sf::Vector2f(200,50), sf::Vector2f(_window.getSize().x * 0.85, _window.getSize().y * 0.02)));
 
+	//AddMapElement(new MapElement("Graphics\\Egypt\\Bg\\Sky_Bg", sf::Vector2f(_window.getSize().x, _window.getSize().y), sf::Vector2f(0, 0), sf::Vector2i(604, 287), sf::Vector2i(10, 10)));
+
 	//WALL
 	for(int _i = 0; _i < 30; _i++)
 	{
